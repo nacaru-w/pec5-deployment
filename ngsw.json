@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1705356685081,
+  "index": "/pec5-deployment/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pec5-deployment/favicon.ico",
+        "/pec5-deployment/index.html",
+        "/pec5-deployment/main.f1e651ce41568c65.js",
+        "/pec5-deployment/manifest.webmanifest",
+        "/pec5-deployment/polyfills.6610c5d228d3dd72.js",
+        "/pec5-deployment/runtime.71dc35b9d91c6452.js",
+        "/pec5-deployment/styles.6507e0fc35322572.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pec5-deployment/assets/icons/icon-128x128.png",
+        "/pec5-deployment/assets/icons/icon-144x144.png",
+        "/pec5-deployment/assets/icons/icon-152x152.png",
+        "/pec5-deployment/assets/icons/icon-192x192.png",
+        "/pec5-deployment/assets/icons/icon-384x384.png",
+        "/pec5-deployment/assets/icons/icon-512x512.png",
+        "/pec5-deployment/assets/icons/icon-72x72.png",
+        "/pec5-deployment/assets/icons/icon-96x96.png",
+        "/pec5-deployment/assets/scss/animate.css"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "images-api",
+      "patterns": [
+        "https:\\/\\/picsum\\.photos\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/pec5-deployment/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/pec5-deployment/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/pec5-deployment/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/pec5-deployment/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/pec5-deployment/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/pec5-deployment/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/pec5-deployment/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/pec5-deployment/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/pec5-deployment/assets/scss/animate.css": "2c6d1c4851293ff192e130af02787fbebca0c5a6",
+    "/pec5-deployment/favicon.ico": "04c278dba3e54393c4c980f7fd4dcd43796ef813",
+    "/pec5-deployment/index.html": "bc66b4eb7ecab56110600f8556f0c5f743c6d3cd",
+    "/pec5-deployment/main.f1e651ce41568c65.js": "657b158f782fd54322332ff0087f40e7becc7e08",
+    "/pec5-deployment/manifest.webmanifest": "147f3402e8ba2e7f1edae912b57aecb163a9ac30",
+    "/pec5-deployment/polyfills.6610c5d228d3dd72.js": "0eef3bd5f970372c0a2d8de2401a59b82d9e9b53",
+    "/pec5-deployment/runtime.71dc35b9d91c6452.js": "ed53e5f29a882a2fac1cd17c562426f88cee8961",
+    "/pec5-deployment/styles.6507e0fc35322572.css": "1c428c356d3ad7dd744d877cb29ee6f7ce441188"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
