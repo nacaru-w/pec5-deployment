@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>List of content</h1>
+    <button (click)="toogleView()">Toggle view</button>
+    <ul class="list-group" [ngClass]="{'table-view': !listView}">
+        <a *ngFor="let image of images" [routerLink]="['/card', image.id]"
+            class="list-group-item list-group-item-action animate__animated animate__bounce animate__fadeIn">
+            {{image.id}} - {{image.author}}
+        </a>
+    </ul>
+</div>
